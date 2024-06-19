@@ -3,6 +3,10 @@
 @import 'tailwindcss/utilities';
 
 @layer utilities {
+    .bg-brown {
+        background-color: #4F372F;
+    }
+
     .logo {
         width: 5rem;
     }

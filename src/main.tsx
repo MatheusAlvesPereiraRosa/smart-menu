@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Menu } from './templates/App'
+import { Menu } from './templates/Menu'
 import './index.css'
 
 
