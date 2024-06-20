@@ -7,12 +7,16 @@
         background-color: #4F372F;
     }
 
-    .logo {
-        width: 5rem;
+    .bg-gray-cart {
+        background-color: #F8F9FA;
     }
 
-    .title-max {
-        max-width: 28rem;
+    .custom-shadow {
+        box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.14);
+    }
+
+    .logo {
+        width: 5rem;
     }
 
     .alert {
@@ -42,6 +46,24 @@ body {
     min-height: 100vh;
 }
 
+.modal-card {
+    overflow-y: scroll;
+}
+
+.modal-card::-webkit-scrollbar {
+    width: .95rem;
+}
+
+.modal-card::-webkit-scrollbar-thumb {
+    @apply bg-brown;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+.modal-card::-webkit-scrollbar-track {
+    @apply bg-white;
+}
+
 @layer base {
 
     h1,
@@ -69,12 +91,12 @@ body {
     }
 
     body::-webkit-scrollbar-track {
-        background: rgb(3, 59, 73);
+        @apply bg-white;
     }
 
     body::-webkit-scrollbar-thumb {
-        @apply bg-amber-600;
-        border: 3px solid rgb(3, 59, 73);
+        @apply bg-brown;
+        border: 3px solid white;
         border-radius: 20px;
     }
 }
